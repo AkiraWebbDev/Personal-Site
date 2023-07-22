@@ -38,9 +38,9 @@ hr {
 }
 
 p {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: #FB2576;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 
@@ -50,7 +50,7 @@ p {
 .top-container {
   background-color: transparent;
   margin: 0;
-  padding: 30px;
+  padding-bottom: 100px;
   position: relative;
   background-image: url("GreenFlame.png");
   width: 100%;
@@ -58,7 +58,7 @@ p {
 }
 
 .container-fluid {
-  padding: 2% 15% 1%;
+  padding: 1% 10% 1%;
 }
 
 #logo-text {
@@ -66,18 +66,48 @@ p {
   font-size: 2.5rem;
   font-weight: bold;
 }
+
+#logo-text:hover{
+  color:#a7f070;
+}
+
+.navbar-nav li:hover a{
+  color:#FB2576;
+}
+
+
 /**********************INTRO SECTION**/
-.brain{
+.imgbox{
   z-index: 2;
+  margin: 0 auto auto 15px;
+}
+
+.imgbox img{
+  position: relative;
   width: 269px;
   height: 214px;
-  position: relative;
-  margin: 0 auto auto 15px;
+  animation: 3s linear 0s infinite alternate animateUser;
+}
+
+@keyframes animateUser{
+  from {
+    transform: translateX(0px);
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateX(-20px);
+    transform: translateY(20px);
+  }
 }
 
 .intro {
   color: #FB2576;
   z-index: 2;
+}
+
+
+.multiText{
+  color:#a7f070
 }
 
 .titleline {
@@ -87,47 +117,69 @@ p {
 .intro-box {
   background: rgba(10, 10, 10, 0.45);
   width: 500px;
-  height: 350px;
+  height: 270px;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.fade-in {
+  animation: fadeIn ease 5s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 
 /******************MIDDLE SECTION**/
 
 .middle-container{
   background-color: #1a1c2c;
   margin-top: 30px;
-}
-
-.heythere {
-  margin-bottom: 0;
-}
-
-.section-paragraph{
+  text-align: left;
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.frog {
-  height: 200px;
-  width: 200px;
-  margin-bottom: 0;
+.skills-container{
+  background-color: #1a1c2c;
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-.heythere {
-  margin-top: 20px;
+.title-header{
+  margin: 20px, auto, auto, 20px;
+  text-align: right;
 }
 
-.skill1img {
-  height: 200px;
-  width: 200px;
+.skillimg {
+  height: 150px;
+  width: 150px;
+  margin: 10px, 0, 10px;
+  filter: url(#noise);
+
 }
 
-.skill2img {
-  height: 250px;
-  width: 250px;
+.skillimg:hover{
+  animation: pulse 800ms ease-in-out;
 }
+
+@keyframes pulse {
+  from, to{
+    scale: 1;
+  }
+  
+  50% {
+    scale : 1.08;
+  }
+}
+
 
 /******************PROJECT SECTION**/
 #projects {
@@ -154,11 +206,22 @@ p {
   padding: 3% 10%;
 }
 
+.control-button {
+  color: #38b764;
+}
+
+.control-button:hover {
+  color: #FB2576;
+}
 
 /******************FOOTER SECTION**/
 
 .footer-icon {
   padding: 20px;
+  color: #38b764;
+}
 
+.footer-icon:hover{
+  color:#FB2576;
 }
 /***************************ID styles **************************/

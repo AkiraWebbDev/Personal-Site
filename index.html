@@ -10,9 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Silkscreen&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b7056e13ca.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -53,14 +55,16 @@
   <section id="introduction">
 
     <div class="top-container">
-      <img class="brain" src="images/Brain.png" alt="a-green-brain-img">
-      <div class="intro-box">
-        <h1>I'm Luke</h1>
+      <div class="imgbox">
+        <img src="images/Brain.png" alt="a-green-brain-img">
+      </div>
+      <div class="intro-box fade-in">
+        <h1>I'm <u>Luke</u></h1>
         <hr class="border border-success border-2">
-        <h3 class="intro">An Aspiring</h3>
-        <h3 class="intro">Developer</h3>
-        <h3 class="intro">Programmer</h3>
-        <h3 class="intro">and Creator.</h3>
+        <h2 class="intro">An Aspiring</h3>
+        <h2 class="intro"><span class="multiText"></span></h3>
+        <!-- <h3 class="intro">Programmer</h3>
+        <h3 class="intro">and Creator.</h3> -->
       </div>
     </div>
 
@@ -70,12 +74,12 @@
 
     <div class="middle-container">
       <div class="profile">
-        <h2 class="heythere">Hey there!</h2>
-        <img class="frog" src="images/Froggy.png" alt="Silhouette of a frog">
+        <h2 class="title-header"><span class="multiText3"></span></h2>
         <h3>A bit about me</h3>
-        <p class="section-paragraph">I'm learning how to code for the future.<br>
-          My goal is to be a full time web, software or game developer. <br>
-          My hobbies include gaming, cooking, historical martial arts and being creative.</p>
+        <p class="section-paragraph">
+          Creative problem solver and tech enthusiast with a vision to land an impactful opportunity in the tech industry.
+          
+          My hobbies include historical martial arts, gaming, cooking and being creative.</p>
       </div>
 
   </section>
@@ -84,21 +88,36 @@
 
   <section id="skills">
 
-    <div class="skills">
-      <h2>My Skills</h2>
-      <div class="skill-row">
-        <img class="skill1img" src="images/hourglass.png" alt="an-hourglass">
-        <h3>Efficiency</h3>
-        <p class="section-paragraph">I am always keen on improving my performance wherever possible.
-          <br>Manging my time and workload effectively, as well as knowing when to ask for help are key to success in my experience
-        </p>
-      </div>
-      <div class="skill-row">
-        <img class="skill2img" src="images/gears.png" alt="three-gears">
-        <h3>Team work</h3>
-        <p class="section-paragraph">I have almost always worked as part of a team.
-          <br> It's clear from my past experiences that a good team thrives when using communication and responsibility.
-        </p>
+    <div class="skills-container">
+      <h2 class="title-header"><span class="multiText2"></span></h2>
+      <div class="row">
+        <div class="col-md-12 skill-row">
+          <img class="skillimg" src="images/hourglass.png" alt="an-hourglass">
+          <h3>Efficiency</h3>
+          <p class="section-paragraph">I am always keen on improving my performance wherever possible.
+                  "I am constantly driven to enhance my performance in every possible way. 
+                  From skillfully managing my time and workload to recognizing the importance of 
+                  seeking assistance when needed, I have learned that these factors are essential 
+                  to achieving success.
+          </p>
+        </div>
+        <div class="col-md-12 skill-row">
+          <img class="skillimg" src="images/gears.png" alt="three-gears">
+          <h3>Team work</h3>
+          <p class="section-paragraph">Throughout my programming and professional journey, I have predominantly
+              been a team player. My past experiences have unequivocally demonstrated that effective communication
+               and a shared sense of responsibility are the cornerstones of a flourishing team dynamic.
+          </p>
+        </div>
+        <div class="col-md-12 skill-row">
+          <img class="skillimg" src="images/Froggy.png" alt="Frog silhouette">
+          <h3>Passionate</h3>
+          <p class="section-paragraph">Immersed in the dynamic realm of technology, I am drawn to its constant
+             evolution and the daily unveiling of new discoveries and creations. With a passion for making a 
+             creative and clever impacts, I aspire to forge a career in the broad and thrilling domains of 
+             cybersecurity, software development, or game development.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -114,21 +133,26 @@
       <div class="carousel-inner">
 
         <div class="carousel-item">
-          <h3 class="project-text">Galaxy Shooter</h2>
+          <h2 class="project-text">Galaxy Shooter</h2>
             <a href="https://akirasaur.itch.io/space-shooter"><img class="galaxyshooter-img" src="images/GalaxyShooter.PNG" alt="galaxy-shooter-screenshot"></a>
             <p>My first game made using unity. It ain't much but it's honest work!</p>
         </div>
-        <div class="carousel-item active">
-          <h3 class="project-text">The Great Fleece</h2>
+        <div class="carousel-item">
+          <h2 class="project-text">The Great Fleece</h2>
             <a href="https://akirasaur.itch.io/the-great-fleece"><img class="project-img" src="images/GreatFleece.PNG" alt="great-fleece-screenshot" ></a>
             <p>A challenging, third-person, point and click stealth game.</p>
         </div>
+        <div class="carousel-item active">
+          <h2 class="project-text">HEMA Hit Detector</h2>
+            <a href="https://universe.roboflow.com/luke-webb/hema-hit-detector/model/2"><img class="project-img" src="images/HEMA.PNG" alt="HEMA-screenshot" ></a>
+            <p>Real-time hit detection app for historical martial arts using YOLO-V8 object detection (WIP) </p>
+        </div>
 
       </div>
-      <a class="carousel-control-prev" data-bs-target="#project-carousel" type="button" data-bs-slide="prev">
+      <a class="carousel-control-prev control-button" data-bs-target="#project-carousel" type="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
-      <a class="carousel-control-next" data-bs-target="#project-carousel" type="button" data-bs-slide="next">
+      <a class="carousel-control-next control-button" data-bs-target="#project-carousel" type="button" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
       </a>
 
@@ -142,19 +166,83 @@
 
     <div class="contact-me">
       <h2>Get In Touch!</h2>
-      <h3>Sell me your soul or purchase mine!</h3>
-      <p class="section-paragraph">Flick me a message if you would like to arrange a conversation</p>
+      <h3>Think I'm fit for the job?</h3>
+      <p class="section-paragraph">Feel free to flick me a message on any of my socials!</p>
     </div>
 
     <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/luke-webb-45b847214/"><i class="footer-icon fa-brands fa-linkedin fa-xl" style="color: #38b764"></i></a>
-      <a class="footer-link" href="https://twitter.com/AkirasProjects"><i class="footer-icon fa-brands fa-twitter fa-xl" style="color: #38b764"></i></a>
-      <a class="footer-link" href="https://www.instagram.com/lukeakirawebb/"><i class="footer-icon fa-brands fa-instagram fa-xl" style="color: #38b764"></i></a>
-      <a class="footer-link" href="https://www.instagram.com/lukeakirawebb/"><i class="footer-icon fa-solid fa-envelope fa-xl" style="color: #38b764"></i></a>
+      <a class="footer-link" href="https://www.linkedin.com/in/luke-webb-45b847214/"><i class="footer-icon fa-brands fa-linkedin fa-xl"></i></a>
+      <a class="footer-link" href="https://twitter.com/AkirasProjects"><i class="footer-icon fa-brands fa-twitter fa-xl" ></i></a>
+      <a class="footer-link" href="https://www.instagram.com/lukeakirawebb/"><i class="footer-icon fa-brands fa-instagram fa-xl" ></i></a>
+      <a class="footer-link" href="https://www.instagram.com/lukeakirawebb/"><i class="footer-icon fa-solid fa-envelope fa-xl" ></i></a>
       <p>© Luke Webb</p>
     </div>
 
   </section>
-</body>
 
+  <script>
+    var typingEffect = new Typed(".multiText", {
+      strings : ["Developer", "Programmer", "Creator"],
+      loop : true,
+      typeSpeed : 100,
+      backSpeed : 80,
+      backDelay : 1500,
+    })
+  </script>
+  <script>
+    var typingEffect = new Typed(".multiText3", {
+      strings : ["Hey There :)", "Kia Ora :)"],
+      loop : true,
+      typeSpeed : 90,
+      backSpeed : 80,
+      backDelay : 3500,
+    })
+  </script>
+  <script>
+    var typingEffect = new Typed(".multiText2", {
+      strings : ["Skills", "Experiences", "Expertise"],
+      loop : true,
+      typeSpeed : 90,
+      backSpeed : 80,
+      backDelay : 2400,
+    })
+  </script>
+
+
+
+  <svg style="display: none;">
+    <defs>
+      <filter id="noise">
+        <feTurbulence
+          baseFrequency="0.7,0.8"
+          seed="0"
+          type="fractalNoice"
+          result="static"
+        >
+          <animate 
+            attributeName="seed"
+            values="0:100"
+            dur="800ms"
+            repeatCount="1"
+            begin="imgbox.mouseenter"
+           />
+        </feTurbulence>
+        <feDisplacementMap 
+          in="SourceGraphic" 
+          in2="static"
+          scale="0"
+          >
+            <animate 
+            attributeName="scale"
+            values="0;1000;0"
+            dur="800ms"
+            repeatCount="1"
+            begin="imgbox.mouseenter"
+            />
+        </feDisplacementMap>/>
+      </filter>
+    </defs>
+  </svg>
+
+</body>
 </html>
