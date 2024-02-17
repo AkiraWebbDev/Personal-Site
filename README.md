@@ -1,7 +1,7 @@
 # Personal-Site
-##My Personal Website!
+## My Personal Website!
 
-Shows off some basic info about me and my style :)
+Shows off my projects and my style :)
 
 Uses GitHub pages to deploy the site.
  
