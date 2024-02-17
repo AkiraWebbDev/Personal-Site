@@ -1,5 +1,9 @@
 # Personal-Site
 ##My Personal Website!
 
-Click the link below to view
-   https://akirahere.github.io/Personal-Site/
+Shows off some basic info about me and my style :)
+
+Uses GitHub pages to deploy the site.
+ 
+##Click the link to view: [Here!](https://akirawebbdev.github.io/Personal-Site/)
+   
